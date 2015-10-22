@@ -15,9 +15,8 @@ SRV = str(socket.gethostname())
 # Mail CONFIGURATION
 SERVER = "localhost"
 PORT = '25' # If left blank port 25 is assumed.
-SEND_FROM = ('ops@' + SRV)
-SEND_FROM = ('SRV@aptrust.org')
-SEND_TO = ['ops@aptrust.org']
+SEND_FROM = "ops@aptrust.org"
+SEND_TO = "ops@aptrust.org"
 
 # Locations to monitor
 MON0='/'
