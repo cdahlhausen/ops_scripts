@@ -10,7 +10,7 @@
 # Add this script in /etc/cron.daily/ owned by root
 #
 
-CATALINA_BASE=`ps aux | grep catalina.base | awk -F'catalina.base\=' '{print $2}' | awk '{print $1}'`
+CATALINA_BASE=`ps aux | grep catalina.base | awk -F'catalina.base\=' '{print $2}' 2>/dev/null | awk '{print $1}'`
 
 if [ ! $CATALINA_BASE ]
 then
